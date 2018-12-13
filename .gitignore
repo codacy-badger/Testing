@@ -1,0 +1,10 @@
+
+src/GameOfLife.BDD/bin/Debug/System.Threading.Tasks.Extensions.dll
+src/.vs/KataGameOfLife/v15/.suo
+/src/packages
+/src/TestResults
+/src/.vs/KataGameOfLife/v15/Server/sqlite3
+/src/KataGameOfLife.Spec/packages
+/src/KataGameOfLife.Spec/bin/Debug
+/src/KataGameOfLife.Spec/obj/Debug
+/src/KataGameOfLife.Library/obj/Debug
