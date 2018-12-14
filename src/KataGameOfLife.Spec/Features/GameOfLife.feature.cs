@@ -68,36 +68,138 @@ namespace KataGameOfLife.Spec.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("A live cell with all neighbours dead :\t0\t0", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t0\t1", SourceLine=6)]
-        public virtual void ALiveCellWithAllNeighboursDead00()
+        [TechTalk.SpecRun.ScenarioAttribute("Alive cell with zero neighbours alive:\t0\t0", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t0\t1", SourceLine=6)]
+        public virtual void AliveCellWithZeroNeighboursAlive00()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A live cell with all neighbours dead :\t0\t0", "\t\t\t\t\t\t\t\t\t\t\t\t\t0\t1", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alive cell with zero neighbours alive:\t0\t0", "\t\t\t\t\t\t\t\t\t\t\t\t\t0\t1", ((string[])(null)));
 #line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 9
- testRunner.Given("initial a live (1) state cell with three dead (3) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("initial alive (1) state cell with zero alive (0) neighbour", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.When("I determine next generation: with three dead neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.Then("next generation is dead (0): with three dead neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("A live cell with all neighbours dead :\t0\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t0\t1", SourceLine=13)]
-        public virtual void ALiveCellWithAllNeighboursDead01()
+        [TechTalk.SpecRun.ScenarioAttribute("Alive cell with one neighbour alive:\t0\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t0\t1", SourceLine=13)]
+        public virtual void AliveCellWithOneNeighbourAlive01()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A live cell with all neighbours dead :\t0\t1", "\t\t\t\t\t\t\t\t\t\t\t\t\t0\t1", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alive cell with one neighbour alive:\t0\t1", "\t\t\t\t\t\t\t\t\t\t\t\t0\t1", ((string[])(null)));
 #line 14
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 16
- testRunner.Given("initial a live (1) state cell: with two dead (2) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("initial a live (1) state cell with one alive (1) neighbour", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 17
- testRunner.When("I determine next generation: with tow dead neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 18
- testRunner.Then("next generation is dead (0): with tow dead neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Alive cell with two neighbours alive:\t1\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t0\t1", SourceLine=19)]
+        public virtual void AliveCellWithTwoNeighboursAlive11()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alive cell with two neighbours alive:\t1\t1", "\t\t\t\t\t\t\t\t\t\t\t\t0\t1", ((string[])(null)));
+#line 20
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 22
+ testRunner.Given("initial a live (1) state cell with two alive (2) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 23
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 24
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("A live cell with three neighbours alive:\t1\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t1\t1", SourceLine=25)]
+        public virtual void ALiveCellWithThreeNeighboursAlive11()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A live cell with three neighbours alive:\t1\t1", "\t\t\t\t\t\t\t\t\t\t\t\t\t1\t1", ((string[])(null)));
+#line 26
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 28
+ testRunner.Given("initial a live (1) state cell with three alive (3) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 29
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 30
+ testRunner.Then("next generation is alife (1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Dead cell with zero neighbours alive:\t0\t0", Description="\t\t\t\t\t\t\t\t\t\t\t\t0\t0", SourceLine=32)]
+        public virtual void DeadCellWithZeroNeighboursAlive00()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dead cell with zero neighbours alive:\t0\t0", "\t\t\t\t\t\t\t\t\t\t\t\t0\t0", ((string[])(null)));
+#line 33
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 35
+ testRunner.Given("initial dead (0) state cell with zero alive (0) neighbour", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 36
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 37
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Dead cell with one neighbour alive:\t0\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t0\t0", SourceLine=38)]
+        public virtual void DeadCellWithOneNeighbourAlive01()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dead cell with one neighbour alive:\t0\t1", "\t\t\t\t\t\t\t\t\t\t\t\t0\t0", ((string[])(null)));
+#line 39
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 41
+ testRunner.Given("initial dead (0) state cell with one alive (1) neighbour", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 42
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 43
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Dead cell with two neighbours alive:\t1\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t0\t0", SourceLine=44)]
+        public virtual void DeadCellWithTwoNeighboursAlive11()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dead cell with two neighbours alive:\t1\t1", "\t\t\t\t\t\t\t\t\t\t\t\t0\t0", ((string[])(null)));
+#line 45
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 47
+ testRunner.Given("initial dead (0) state cell with tow alive (2) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 48
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 49
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Dead cell with three neighbours alive:\t1\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t1\t0", SourceLine=50)]
+        public virtual void DeadCellWithThreeNeighboursAlive11()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dead cell with three neighbours alive:\t1\t1", "\t\t\t\t\t\t\t\t\t\t\t\t\t1\t0", ((string[])(null)));
+#line 51
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 53
+ testRunner.Given("initial dead (0) state cell: with three alive (3) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 54
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 55
+ testRunner.Then("next generation is alife (1)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

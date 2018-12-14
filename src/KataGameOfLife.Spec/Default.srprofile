@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TestProfile xmlns="http://www.specflow.org/schemas/plus/TestProfile/1.5">
-  <Settings projectName="KataSpec" projectId="{6add4a0f-3204-40a2-a49b-02d84f9586ea}" />
+  <Settings projectName="KataGameOfLife.Spec" projectId="{a75616ac-6a05-4aab-8c00-b0ac41bcfd4b}" />
   <Execution stopAfterFailures="3" testThreadCount="1" testSchedulingMode="Sequential" />
   <!-- For collecting by a SpecRun server update and enable the following element. For using the 
       collected statistics, set testSchedulingMode="Adaptive" attribute on the <Execution> element.
     <Server serverUrl="http://specrunserver:6365" publishResults="true" />
   -->
   <TestAssemblyPaths>
-    <TestAssemblyPath>KataSpec.dll</TestAssemblyPath>
+    <TestAssemblyPath>KataGameOfLife.Spec.dll</TestAssemblyPath>
   </TestAssemblyPaths>
   <DeploymentTransformation>
     <Steps>
