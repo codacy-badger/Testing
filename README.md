@@ -33,3 +33,11 @@ off the edges. When calcuating the next generation of the grid, follow these rul
 2. Any live cell with more than three live neighbours dies, as if by overcrowding.
 3. Any live cell with two or three live neighbours lives on to the next generation.
 4. Any dead cell with exactly three live neighbours becomes a live cell.
+
+## Credits
+
+- Made by [Atef Mlaouhi](https://github.com/AtefMlaouhi).
+
+## License
+
+This project uses the [LGPL v3 License](https://www.gnu.org/licenses/lgpl-3.0.en.html) (See the LICENSE file in this repository).
