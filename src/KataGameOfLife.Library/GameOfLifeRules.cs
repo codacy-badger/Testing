@@ -21,7 +21,8 @@ namespace KataGameOfLife.Spec.Library
 
         public static void SetNextGeneration()
         {
-            //throw new NotImplementedException();
+            if (CurrentCell == CellState.Alive && Neighbour == 0)
+                CurrentCell = CellState.Dead;
         }
     }
 }
