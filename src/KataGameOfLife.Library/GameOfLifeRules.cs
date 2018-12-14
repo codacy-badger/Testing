@@ -30,6 +30,8 @@ namespace KataGameOfLife.Spec.Library
                 CurrentCell = CellState.Dead;
             if (CurrentCell == CellState.Alive && Neighbour == 3)
                 CurrentCell = CellState.Alive;
+            if (CurrentCell == CellState.Dead && Neighbour == 3)
+                CurrentCell = CellState.Alive;
         }
     }
 }
