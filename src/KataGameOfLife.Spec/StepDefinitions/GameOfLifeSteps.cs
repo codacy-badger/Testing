@@ -2,6 +2,7 @@
 using TechTalk.SpecFlow;
 using NUnit.Framework;
 using FluentAssertions;
+using KataGameOfLife.Spec.Library;
 
 namespace KataGameOfLife.Spec.StepDefinitions
 {
@@ -65,13 +66,13 @@ namespace KataGameOfLife.Spec.StepDefinitions
         [Then(@"next generation is dead \((.*)\)")]
         public void ThenNextGenerationIsDead(CellState result)
         {
-            Assert.That(GameOfLifeRules.CurrentCell.Should().Equals(result));
+            Assert.That(GameOfLifeRules.CurrentCell.Equals(result));
         }
 
         [Then(@"next generation is alife \((.*)\)")]
         public void ThenNextGenerationIsAlife(CellState result)
         {
-            Assert.That(GameOfLifeRules.CurrentCell.Should().Equals(result));
+            Assert.That(GameOfLifeRules.CurrentCell.Equals(result));
         }
     }
 }

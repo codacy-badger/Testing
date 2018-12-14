@@ -2,6 +2,7 @@
 
 namespace KataGameOfLife.Spec.Library
 {
+    [Flags]
     public enum CellState
     {
         Dead = 0,
@@ -23,6 +24,12 @@ namespace KataGameOfLife.Spec.Library
         {
             if (CurrentCell == CellState.Alive && Neighbour == 0)
                 CurrentCell = CellState.Dead;
+            if (CurrentCell == CellState.Alive && Neighbour == 1)
+                CurrentCell = CellState.Dead;
+            if (CurrentCell == CellState.Alive && Neighbour == 2)
+                CurrentCell = CellState.Dead;
+            if (CurrentCell == CellState.Alive && Neighbour == 3)
+                CurrentCell = CellState.Alive;
         }
     }
 }
