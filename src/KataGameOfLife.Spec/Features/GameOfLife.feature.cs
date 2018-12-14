@@ -204,6 +204,40 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [TechTalk.SpecRun.ScenarioAttribute("Dead cell with more than three neighbours alive:\t1\t1\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\t0\t1\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t0\t0", SourceLine=56)]
+        public virtual void DeadCellWithMoreThanThreeNeighboursAlive111()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dead cell with more than three neighbours alive:\t1\t1\t1", "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\t0\t1\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t0\t0", ((string[])(null)));
+#line 57
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 60
+ testRunner.Given("initial dead (0) state cell: with more than three alive (4) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 61
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 62
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Alive cell with more than three neighbours alive:\t1\t1\t1", Description="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\t1\t1\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t0\t0", SourceLine=63)]
+        public virtual void AliveCellWithMoreThanThreeNeighboursAlive111()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alive cell with more than three neighbours alive:\t1\t1\t1", "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1\t1\t1\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t0\t0\t0", ((string[])(null)));
+#line 64
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 67
+ testRunner.Given("initial alive (1) state cell: with more than three alive (4) neighbours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 68
+ testRunner.When("I determine next generation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 69
+ testRunner.Then("next generation is dead (0)", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {

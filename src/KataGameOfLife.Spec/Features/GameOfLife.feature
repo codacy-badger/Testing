@@ -53,3 +53,17 @@ Scenario: Dead cell with three neighbours alive:	1	1
 	Given initial dead (0) state cell: with three alive (3) neighbours
 	When I determine next generation
 	Then next generation is alife (1)
+
+Scenario: Dead cell with more than three neighbours alive:	1	1	1
+															1	0	1
+															0	0	0
+	Given initial dead (0) state cell: with more than three alive (4) neighbours
+	When I determine next generation
+	Then next generation is dead (0)
+
+Scenario: Alive cell with more than three neighbours alive:	1	1	1
+															1	1	1
+															0	0	0
+	Given initial alive (1) state cell: with more than three alive (4) neighbours
+	When I determine next generation
+	Then next generation is dead (0)

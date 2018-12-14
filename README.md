@@ -18,9 +18,10 @@ number of live neighbors and then spits out a new state (live/dead).
 ## Requirements :
 
 - [Visual studio](https://visualstudio.microsoft.com/fr/?rr=https%3A%2F%2Fwww.google.com%2F) to run the application.
+- .Net Framework 4.6.1
 - [specflow](https://specflow.org/) Binding Business Requirements to .NET Code
-- [Nunit](https://nunit.org/) Unit-testing framework for all .Net languages.
-- [Fluent assertions](https://fluentassertions.com/) Assertions is Fluent
+- [Nunit](https://nunit.org/) Unit-testing framework for all .Net languages. 3.11.0
+- [Fluent assertions](https://fluentassertions.com/) Assertions is Fluent 5.0.0
 
 ## User Stories
 

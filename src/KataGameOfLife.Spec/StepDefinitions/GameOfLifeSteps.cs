@@ -51,8 +51,20 @@ namespace KataGameOfLife.Spec.StepDefinitions
             GameOfLifeRules.SetCurrentGeneration(initSatate, neighbour);
         }
 
+        [Given(@"initial dead \((.*)\) state cell: with more than three alive \((.*)\) neighbours")]
+        public void GivenInitialDeadStateCellWithMoreThanThreeAliveNeighbours(CellState initSatate, int neighbour)
+        {
+            GameOfLifeRules.SetCurrentGeneration(initSatate, neighbour);
+        }
+
         [Given(@"initial dead \((.*)\) state cell: with three alive \((.*)\) neighbours")]
         public void GivenInitialDeadStateCellWithThreeAliveNeighbours(CellState initSatate, int neighbour)
+        {
+            GameOfLifeRules.SetCurrentGeneration(initSatate, neighbour);
+        }
+
+        [Given(@"initial alive \((.*)\) state cell: with more than three alive \((.*)\) neighbours")]
+        public void GivenInitialAliveStateCellWithMoreThanThreeAliveNeighbours(CellState initSatate, int neighbour)
         {
             GameOfLifeRules.SetCurrentGeneration(initSatate, neighbour);
         }
