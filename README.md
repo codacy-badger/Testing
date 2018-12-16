@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/AtefMlaouhi/kata-Conway-s-Game-of-Life.svg?branch=master)](https://travis-ci.org/AtefMlaouhi/kata-Conway-s-Game-of-Life)
+[![Build Status](https://travis-ci.org/AtefMlaouhi/Kata-Conway-s-Game-of-Life.svg?branch=master)](https://travis-ci.org/AtefMlaouhi/Kata-Conway-s-Game-of-Life)
 
 # Game of life
 
