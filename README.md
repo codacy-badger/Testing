@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/AtefMlaouhi/BDD-Conway-s-Game-of-Life.svg?branch=master)](https://travis-ci.org/AtefMlaouhi/BDD-Conway-s-Game-of-Life)
+[![codecov](https://codecov.io/gh/AtefMlaouhi/Kata-Conway-s-Game-of-Life/branch/master/graph/badge.svg)](https://codecov.io/gh/AtefMlaouhi/Kata-Conway-s-Game-of-Life)
 
 [![license](https://img.shields.io/github/license/AtefMlaouhi/Kata-Conway-s-Game-of-Life.svg?maxAge=2592000)]()
 
