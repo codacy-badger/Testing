@@ -3,7 +3,7 @@
 namespace KataGameOfLife.Spec.Library
 {
     [Flags]
-    public enum CellState
+    public enum GenerationState
     {
         Dead = 0,
         Alive = 1
@@ -11,30 +11,28 @@ namespace KataGameOfLife.Spec.Library
 
     public class GameOfLifeRules
     {
-        public static CellState CurrentCell { get; set; } = CellState.Dead;
-        private static int Neighbour { get; set; }
+        public static GenerationState CurrentCell { get; set; } = GenerationState.Dead;
+        private static int NeighbourALive { get; set; }
 
-        public static void SetCurrentGeneration(CellState currentCell, int neighbour)
+        public static void SetCurrentGeneration(GenerationState currentCell, int neighbourALive)
         {
             CurrentCell = currentCell;
-            Neighbour = neighbour;
+            NeighbourALive = neighbourALive;
         }
 
         public static void SetNextGeneration()
         {
-            if (CurrentCell == CellState.Alive)
+            switch (CurrentCell)
             {
-                if ((Neighbour == 2) || (Neighbour == 3))
-                    CurrentCell = CellState.Alive;
-                else
-                {
-                    if (Neighbour < 2 || Neighbour > 3)
-                        CurrentCell = CellState.Dead;
-                }
+                case GenerationState.Alive:
+                    if (NeighbourALive < 2 || NeighbourALive > 3)
+                        CurrentCell = GenerationState.Dead;
+                    break;
+                case GenerationState.Dead:
+                    if (NeighbourALive == 3)
+                        CurrentCell = GenerationState.Alive;
+                    break;
             }
-
-            if (CurrentCell == CellState.Dead && Neighbour == 3)
-                CurrentCell = CellState.Alive;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace KataGameOfLife.Spec.StepDefinitions
     public class GameOfLifeSteps
     {
         [Given(@"initial ""(.*)"" state cell with \((.*)\) alive neighbours")]
-        public void GivenInitialStateCellWithAliveNeighbours(CellState initSatate, int neighbour)
+        public void GivenInitialStateCellWithAliveNeighbours(GenerationState initSatate, int neighbour)
         {
             GameOfLifeRules.SetCurrentGeneration(initSatate, neighbour);
         }
@@ -23,7 +23,7 @@ namespace KataGameOfLife.Spec.StepDefinitions
         }
 
         [Then(@"next generation is ""(.*)""")]
-        public void ThenNextGenerationIs(CellState result)
+        public void ThenNextGenerationIs(GenerationState result)
         {
             Assert.That(GameOfLifeRules.CurrentCell.Equals(result));
         }
