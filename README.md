@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AtefMlaouhi/Kata-Conway-s-Game-of-Life.svg?branch=master)](https://travis-ci.org/AtefMlaouhi/Kata-Conway-s-Game-of-Life/)
+
 # Game of life
 
 The game is a zero-player game, meaning that its evolution is determined by its
