@@ -1,0 +1,3 @@
+language: csharp
+solution: KataGameOfLife.sln
+install: nuget restore KataGameOfLife.sln
