@@ -22,10 +22,19 @@ namespace KataGameOfLife.Spec.Library
 
         public static void SetNextGeneration()
         {
-            if (Neighbour == 3)
+            if (CurrentCell == CellState.Alive)
+            {
+                if ((Neighbour == 2) || (Neighbour == 3))
+                    CurrentCell = CellState.Alive;
+                else
+                {
+                    if (Neighbour < 2 || Neighbour > 3)
+                        CurrentCell = CellState.Dead;
+                }
+            }
+
+            if (CurrentCell == CellState.Dead && Neighbour == 3)
                 CurrentCell = CellState.Alive;
-            else
-                CurrentCell = CellState.Dead;
         }
     }
 }
