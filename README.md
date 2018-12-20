@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/AtefMlaouhi/Kata-Conway-s-Game-of-Life.svg?branch=master)](https://travis-ci.org/AtefMlaouhi/Kata-Conway-s-Game-of-Life)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8fc9835983da4f719831276afcc208e9)](https://www.codacy.com/app/AtefMlaouhi/Kata-Conway-s-Game-of-Life?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AtefMlaouhi/Kata-Conway-s-Game-of-Life&amp;utm_campaign=Badge_Grade)
-
+[![Coverage Status](https://coveralls.io/repos/github/AtefMlaouhi/Kata-Conway-s-Game-of-Life/badge.svg?branch=master)](https://coveralls.io/github/AtefMlaouhi/Kata-Conway-s-Game-of-Life?branch=master)
 # Game of life
 
 The game is a zero-player game, meaning that its evolution is determined by its
